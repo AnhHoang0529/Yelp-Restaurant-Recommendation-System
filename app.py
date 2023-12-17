@@ -2,7 +2,6 @@ import streamlit as st
 import pickle
 import pandas as pd
 import numpy as np
-import wget
 from streamlit_option_menu import option_menu
 from content_based_recommendations import content_based_recommendations
 from item_based_recommendations import item_based_recommendations
@@ -94,7 +93,7 @@ selected = option_menu(None, ["Home", "Content-based", "Collaborative", 'Model-b
 
 if selected == "Home":
   st.header('Welcome to my Demo', divider='rainbow')
-  st.image("input.png")
+  st.image("demo_data/input.png")
 if selected == "Content-based":
   st.sidebar.header(f"You selected {selected}", divider='rainbow')
   selected_user = st.sidebar.selectbox('Select a user to recommend',data.index.values)
