@@ -1,4 +1,5 @@
-pandas --upgrade
+--upgrade pip
+pandas
 numpy
 scikit-learn
 streamlit
