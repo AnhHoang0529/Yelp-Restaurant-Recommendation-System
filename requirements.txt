@@ -1,6 +1,5 @@
 pandas
 numpy
 scikit-learn
-streamlit
 streamlit-option-menu
 wget
